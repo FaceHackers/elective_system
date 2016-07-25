@@ -1,0 +1,91 @@
+body { margin:0; background:#FFFFFF; font-size: 13.5pt; color:#333333; font-family: 微軟正黑體; }
+a {text-decoration: none;outline: none; behavior:expression(this.onFocus=this.blur());}
+ul, li { margin:0; padding:0; list-style: none; }
+iframe {border:none;}
+
+/* 字體顏色 */
+span.c1 { color:#0066FF; } span.c2 { color:#FF287E; } span.c3 { color:#FF3300; } span.c4 { color:#FF0000; }
+span.c5 { color:#ECE6D0; } span.c6 { color:#B94B3A; font-size:12.5pt; }
+
+/*******/
+#SelArea{z-index:10;position:fixed; width:240px;border:8px #4D94FF solid; overflow-x:hidden;}
+#Body-Top{z-index:2;position:fixed;top:0;margin-left:256px;text-align:center;height:50px;background:#F0F0F0; box-shadow:0px 0px 10px #727272;}
+#Body-Fot{z-index:2;position:fixed;bottom:0;margin-left:256px;height:50px;text-align:center;background:#F0F0F0;box-shadow:0px 0px 10px #727272;}
+#Body-Mid{z-index:1;position:fixed;top:0;left:0;margin-top:50px;margin-left:256px;}
+
+/*selimg*/
+.selimg{z-index:10;position:fixed;text-align:center;padding:20px 0px 10px 0px;background:#FFF;}
+
+/*selbtn*/
+.selbtn{width:240px; padding:10px 10px 20px 10px;}
+.selbtn li {border-bottom:1px #e8e8e8 dashed;padding:10px 0px;}
+.selbtn a {display:block;}
+
+/*cmsbody*/
+.cmsbody{padding:10px;}
+
+/* ptit */
+.ptit{width:100%;border-bottom:1px #727272 solid; overflow:auto;font-size:14pt; margin:25px 0px 20px 0px;}
+.ptit li {float:left;} .ptit li img{height:40px;padding-right:10px;}
+.ptit > .tit{padding-top:10px;}
+
+/*tab1*/
+.tab1 {padding:10px; background:#F6F6F6; border:1px #727272 solid; }
+
+/*tab2*/
+.tab2{border:1px #727272 solid;}
+.tab2 td{padding:5px;}
+.tab2-1{background:#0066FF;color:#fff;}
+.tab2-w{width:60px;}
+
+/* 選項按鈕 radio */
+.radioCss { display: none; }
+.radioCss + label { -webkit-appearance:none; background-color:#FAFAFA; border:1px solid #CACECE; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding:9px; border-radius:50px; display:inline-block; position:relative;  cursor:pointer; }
+.radioCss:checked + label:after { content:' '; width:12px; height:12px; border-radius:50px; position:absolute; top:3px; background:#99A1A7; box-shadow:inset 0px 0px 10px rgba(0,0,0,0.3); text-shadow:0px; left:3px; font-size:32px; }
+.radioCss:checked + label { background-color:#E9ECEE; color:#99A1A7; border:1px solid #ADB8C0; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1); }
+.radioCss + label:active, .radioCss:checked + label:active { 
+box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); 
+} /* End */
+
+/* 全屏背景 */
+#MsgBg{ z-index:2000; position:fixed; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,0.8); display:none; }
+#LoginBg{ z-index:2000; position:fixed; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,0.8); display:none; }
+
+/* 訊息視窗 */
+#MsgYesNo{z-index:5001; position:fixed;width:400px;height:200px;top:50%;left:50%;margin-top:-100px;margin-left:-200px;background:#FFF;border-radius:5px; border:5px solid #a10000; box-shadow:0px 0px 10px #000;display:none;}
+#MsgYesNo .MsgArea{margin:10px;}
+#MsgYesNo .tit{font-size:17pt;color:#0066FF;padding-bottom:5px;border-bottom:1px solid #727272;} 
+#MsgYesNo .imgs{float:left;height:70px;margin-right:10px;}
+#MsgYesNo .msg{height:110px;line-height:30px;padding:5px 0px 0px 10px;}
+#MsgYesNo .btn {text-align:right;}
+#MsgYesNo a.btnYes{padding:5px 15px; background:#0066FF;color:#FFF;border-radius: 5px 5px 5px 5px;cursor:pointer;}
+#MsgYesNo a:hover.btnYes{background:#3384FF;}
+#MsgYesNo a.btnNo{padding:5px 15px; background:#C40000;color:#FFF;border-radius: 5px 5px 5px 5px;cursor:pointer;}
+#MsgYesNo a:hover.btnNo{background:#CF3333;}
+#MsgAlert{ z-index:5001; position:fixed; width:400px; height:200px; top:50%; left:50%; margin-top:-100px; margin-left:-200px; background:#FFF; border-radius:5px; border:5px solid #a10000; box-shadow:0px 0px 10px #000; display:none; }
+#MsgAlert .MsgArea{ margin:10px; }
+#MsgAlert .tit{ font-size:17pt; color:#0066FF; padding-bottom:5px; border-bottom:1px solid #727272; } 
+#MsgAlert .imgs{ float:left; height:70px; margin-right:10px; }
+#MsgAlert .msg{ height:110px; line-height:30px; padding:5px 0px 0px 10px; }
+#MsgAlert .btn { text-align:right; }
+#MsgAlert a.btnYes{ padding:5px 15px; background:#0066FF; color:#FFF; border-radius:5px; cursor:pointer; }
+#MsgAlert a:hover.btnYes{ background:#3384FF; }
+.MsgDefBorder { border:1px #CACECE solid; } /* 預設框線顏色 */
+.MsgErrBorder { border:1px #FF287E solid; } /* 錯誤框線顏色 */
+
+/*logintab*/
+.logintab{z-index:5000;position:fixed;width:600px;height:240px;top:100px;left:50%;margin-left:-320px;border-radius: 8px 8px 8px 8px;background:#FFF;box-shadow:0px 0px 30px #FFF;padding:0px 20px 0px 20px;margin-top:-800px;}
+.logintab li {border:none; }
+.logintab li.img1{text-align:center;padding-top:10px;}
+.logintab li.img2{z-index:1; position:absolute;top:0;margin-top:-90px;right:0;}
+.logintab li.tab1{padding:20px;background:#FFF;} 
+.logintab li.tab1pic1{float:left;margin:10px 0px 0px 8px;}
+/*loginimg*/
+.loginimg{width:287px;height:141px;z-index:5000;position:fixed;top:50%;left:50%;margin-top:-70px;margin-left:-173px;background:#FFF;border-radius: 8px 8px 8px 8px;padding:0px 30px 0px 30px;}
+/**** 表單 ****/
+.formsty input[type="text"], .formsty input[type="password"], .formsty input[type="file"], .formsty select, .formsty textarea {
+padding:5px;border:none;font-size:12.5pt;color:#2a2a2a;border-radius: 5px 5px 5px 5px; font-family: 微軟正黑體; border:1px #eaeaea solid;}
+input.formbtn{background:#2c2c2c;color:#FFFFFF;padding:10px 30px 10px 30px;border-radius: 5px 5px 5px 5px;cursor:pointer;border:none;font-size:12pt;}
+input.formbtn:hover{background:#101010;}
+a.formbtn{background:#2c2c2c;color:#FFFFFF;padding:10px 40px 10px 40px;margin:10px;border-radius: 5px 5px 5px 5px;cursor:pointer;border:none;}
+a:hover.formbtn{background:#101010;}
