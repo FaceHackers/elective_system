@@ -21,7 +21,7 @@ class adminController extends Controller {
             exit;
         }else{
             $_SESSION["iflogin"]=0;
-            $_SESSION["alert"]="帳密錯誤或未輸入帳密!!";
+            
             echo "<script>alert('帳密錯誤或未輸入帳密!!'); </script>";
             echo "<script>location.href = 'admin';</script>";
             
